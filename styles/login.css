@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; 
+    padding: 2rem;
+    background-image: url('../static/hero-bg-img.webp');
+}
+
+.login-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    outline: 1px solid #d3d4d5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-container h1, h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.login-container input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4169E1;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-container input[type="checkbox"]:checked {
+    background-color: #4169E1;
+    border-color: #4169E1;
+}
+
+.login-container input[type="checkbox"]:checked::after {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    left: 5px;
+    top: 2px;
+}
+
+.login-container input[type="checkbox"]:hover {
+    background-color: #3154b3;
+    border-color: #3154b3;
+}
+
+.login-container button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #4169E1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.login-container button:hover {
+    background-color: #3154b3;
+}
+
+.interest-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.interest-item {
+    flex: 1 0 calc(50% - 0.5rem);
+    padding: 0.7rem;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.interest-item:hover {
+    background-color: #ced4da;
+}
+
+.interest-item.selected {
+    background-color: #28a745;
+    color: #fff;
+}
+.wave-bg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(90deg, #01A2A6 0%, #2970E7 100%);
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+}
+
+.wave-bg::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C50.45,22.34,121.09,45.35,191.84,55.59Z' fill='url(%23gradient)'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%2301A2A6'/%3E%3Cstop offset='100%25' style='stop-color:%232970E7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .interest-areas {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .interest-item {
+        flex: 1 0 100%;
+    }
+}

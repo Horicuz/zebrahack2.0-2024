@@ -1,0 +1,89 @@
+.hero {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 5rem 10%;
+    padding-top: 15%;
+    margin-bottom: 8rem;
+}
+
+.hero h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+.hero a {
+    background-color: #4169E1;
+    color: white !important;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.hero a:hover {
+    background-color: #3154b3;
+}
+
+.books-bg {
+    background-image: linear-gradient(90deg, #01A2A6 0%, #2970E7 100%);
+    width: 100wh;
+    height: fit-content;
+    padding-top: 300px;
+}
+
+.books {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10%);
+    width: calc(100% / 1.5);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+.books-bg p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 20% 10% 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+        padding: 3rem 5%;
+        padding-top: 20%;
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .hero a{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .books-bg {
+        padding-top: 100px;
+    }
+
+    .books-bg p {
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        padding: 0 10% 20% 10%;
+    }
+}
