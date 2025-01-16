@@ -9,7 +9,7 @@ This repository contains the work done by team `WLOG` for ZebraHack2.0, the hack
 For ZebraHack 2.0, we participated in the **3rd Challenge**, where we developed an **Educational Library of Resources** for AmpliFY ONG, a nonprofit organization focused on amplifying educational initiatives. Our project aimed to provide a comprehensive, easy-to-navigate platform for their educational content.
 
 ## Check out the final product here
-[![WLOG - HACK](https://hackathon-tw-2024.github.io/zebrahack2-0-wlog/)]
+https://hackathon-tw-2024.github.io/zebrahack2-0-wlog/
 
 ## Team Members
 - **Horia-Ioan Potop** (@Horicuz)  
